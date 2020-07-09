@@ -1,9 +1,11 @@
-#Komment
-##Simple Extenstion that pulls out HTML Comments
-###No need to search for comments by yourself!
+# Komment
+**Simple Extenstion that pulls out HTML Comments**
+**No need to search for comments by yourself!**
 
 
-**Installing Instructions:**
+
+
+# Installing Instructions:
 - Clone the repository to your local machine.
 - Make sure Chrome Google is installed correctly and run it.
 - go to chrome://extensions
