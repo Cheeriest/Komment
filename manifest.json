@@ -4,7 +4,12 @@
     "description": "Shows all comments on a given page",
     "version": "1.0",
     "permissions": [
-        "storage"
+        "storage",
+        "tabs",
+        "activeTab",
+        "notifications",
+        "http://*/",
+        "https://*/"
     ],
     "background": {
         "scripts": ["background.js"],
