@@ -1,6 +1,62 @@
 body{
     width:500px;
     height:500px;
+    background-color: wheat;
+}
+
+ul{
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    text-emphasis-color: black;
+    width: 1em;
+    width: 70%;
+    margin-left: -3em;
+    text-overflow: ellipsis;
     
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: yellow;
+    border-radius: 10px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.header{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    border-radius: 25%;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    font-size: 30px;
+}

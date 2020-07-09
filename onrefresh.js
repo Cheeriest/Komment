@@ -21,10 +21,14 @@ function clearItems(){
 
 function refresh(source){
     clearItems()
+    var counter = 0;
     var comment_pattern = /<!--[\s\S]*?-->/g;
     while((result = comment_pattern.exec(source)) !== null) {
         addComment(result);
+        counter++;
     }
+    document.body.style.width = 400;
+    document.body.style.height = 50 + 300 * counter;
 }
 
 function onWindowLoad(){
